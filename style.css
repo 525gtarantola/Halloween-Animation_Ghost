@@ -1,12 +1,12 @@
 body {
     overflow: hidden;
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
-    background: #424f6f
+    background: #631f8a;
 }
 
 #container {
@@ -14,8 +14,9 @@ body {
     height: 400px;
     padding: 0;
     box-sizing: border-box;
-    background: #424f6f;
-}
+    background: #631f8a;
+};
+
 
 *:after, 
 *:before {
@@ -91,13 +92,24 @@ body {
 
 
 #spooky #body #mouth:before {
-    content: '';
-    display: block; 
-    background: #FFF; 
-    margin-left: 20px; 
-    width: 10px; 
-    height: 10px; 
+    content: ' ';
+    display: block;
+    background: #fff;
+    margin-left: 18px;
+    width: 10px;
+    height: 10px;
 }
+
+#spooky #body #mouth:after {
+    content: ' ';
+    display: block;
+    background: #fff;
+    margin-top: -16.5%;
+    margin-left: 30px;
+    width: 10px;
+    height: 10px;
+}
+
 
 #spooky #body #feet {
     position: absolute;
@@ -118,12 +130,12 @@ body {
 }
 
 #shadow {
-    margin: -90px auto 0; 
+    margin: -90px auto 0;
     background: #252c49;
-    width: 180px; 
-    height: 40px; 
-    border-radius: 50%; 
-    animation: zoomy 2s infinite; 
+    width: 180px;
+    height: 40px;
+    border-radius: 50%;
+    animation: zoomy 2s infinite;
 }
 
 @keyframes floaty {
@@ -142,6 +154,6 @@ body {
     }
 
     50% {
-        transform: translateY(0.5);
+        transform: scale(0.8);
     }
 }
